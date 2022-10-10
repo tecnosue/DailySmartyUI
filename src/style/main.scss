@@ -25,4 +25,11 @@ body {
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+
+    .logo-main {
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
 }

@@ -6,3 +6,4 @@ hilo-error.log
 dist /
 env.js
 node_modules
+git remote add
