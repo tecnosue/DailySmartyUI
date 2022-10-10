@@ -1,0 +1,8 @@
+node_modules /
+npm-debug.log
+hilo-error.log
+
+# proyecto
+dist /
+env.js
+node_modules
