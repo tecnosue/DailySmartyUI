@@ -8,7 +8,7 @@ class Results extends Component {
         <h1>Results</h1>
         <Logo/>
       </div>
-    )
+    );
   }
 }
 export default Results;
