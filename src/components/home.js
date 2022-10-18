@@ -8,11 +8,17 @@ import Results from "./results";
 //import * as actions from '../actions';
 
 export default class App extends Component {
+
+  handleSearchBarSubmit = function ( query ) {
+    console.log("trying to handle submit for query", query);
+    this.props.history.push("/results");  
+  };
+
   render() {
     return (
       <div>
         <Logo />
-        <SearchBar />
+        <SearchBar onSubmit={ (query) => this.handleSearchBarSubmit(query)}/>
         <RecentPosts />
         
       </div>
