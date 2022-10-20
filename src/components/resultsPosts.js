@@ -5,11 +5,11 @@ import Post from './post';
 class ResultsPosts extends Component {
     renderPosts() {
         const posts = this.props.posts.map((post, index) => {
-            return <Post type="results" key={index} {...post} />
+            return <Post type="results" key={index} {...post} />;
     
             
             
-        })
+        });
         return posts;
 
         
@@ -24,14 +24,14 @@ class ResultsPosts extends Component {
                     </ul>
                 </div>
             </div>
-        )
+        );
     }
 }
 
 function mapStateToProps(state) {
-    return{ 
+    return { 
         posts: state.posts.resultsPosts 
-    }
+    };
 }
 
 export default connect(mapStateToProps)(ResultsPosts);

@@ -6,7 +6,7 @@ export function fetchRecentPosts() {
     axios.get("https://api.dailysmarty.com/posts").then((response) => {
       dispatch({
         type: SET_RECENT_POSTS,
-        payload: response.data.posts,
+        payload: response.data.posts
       });
     });
   };
@@ -19,8 +19,8 @@ export function fetchPostsWithQuery(query, callback) {
         dispatch({
           type: SET_RESULTS_POSTS,
           payload: response.data.posts,
-        })
+        });
         if (callback){callback()};
-      })
+      });
   };
 }
