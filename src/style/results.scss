@@ -42,7 +42,8 @@
   }
 
   .result-post__links {
-    //display: flex;
+    display: flex;
+
 
 
   }
@@ -51,6 +52,8 @@
 .post-link{
   min-height: 70px;
   display: flex;
+  flex-basis: 205px;
+  margin-right: 37px;
   .post-link__box{
     min-width: 70px;
     background-color: $color-gray-three;

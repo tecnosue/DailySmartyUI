@@ -47,6 +47,9 @@ export class Post extends Component {
                 </div> 
             )           
         })
+        if(links == 0) {
+            return <div>No post Links</div>
+        }
         return links;
     }
 

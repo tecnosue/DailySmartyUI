@@ -28,8 +28,13 @@ ul {
 $color-gray-one: #666666;
 $color-gray-two:#b3b3b3;
 $color-gray-three:#d8d8d8;
-
 $color-blue-one:#0079ff;
+
+.no-content {
+  color: $color-gray-one;
+  font-size: 14px;
+  line-height: 17px;
+}
 
 @import './mixins';
 @import './searchBar';
