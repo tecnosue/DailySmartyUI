@@ -9,12 +9,12 @@ import * as actions from '../actions';
 
 class Home extends Component {
 
-  handleSearchBarSubmit = function ( query ) {
-    this.props.fetchPostsWithQuery(query), () => {
+  handleSearchBarSubmit( query ) {
+    this.props.fetchPostsWithQuery(query, () => {
       this.props.history.push("/results");  
 
-    } ;
-  };
+    }) ;
+  }
 
   render() {
     return (
