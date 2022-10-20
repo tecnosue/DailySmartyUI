@@ -14,12 +14,15 @@ export function fetchRecentPosts() {
 export function fetchPostsWithQuery(query, callback) {
   return function (dispatch) {
     axios
-      .get(`https://api.dailysmarty.com/search?q=${query}`)
+      .get(`https://api.dailysmarty.com/posts`)
       .then((response) => {
         dispatch({
           type: SET_RESULTS_POSTS,
           payload: response.data.posts,
-        });
+        })
+        .catch(error)  
+          console.log("error", error);
+        
         if (callback){callback()};
       });
   };
