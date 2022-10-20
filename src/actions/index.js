@@ -20,8 +20,6 @@ export function fetchPostsWithQuery(query, callback) {
           type: SET_RESULTS_POSTS,
           payload: response.data.posts,
         })
-        .catch(error)  
-          console.log("error", error);
         
         if (callback){callback()};
       });
